@@ -66,7 +66,7 @@ public class LoginTests {
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
 
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("");
-        driver.findElement(By.name("ctl00$MainContent$password")).sendKeys("");
+        driver.findElement(By.name("ctl00$MainContent$password")).sendKeys("Test");
         driver.findElement(By.className("button")).click();
         Assert.assertNotEquals(driver.getTitle(), "Web Orders");
         driver.quit();
