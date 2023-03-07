@@ -11,16 +11,6 @@ import java.time.Duration;
 public class LoginTests2 {
 
 
-    @BeforeClass
-    public void beforeClass(){
-        System.out.println("Before class");
-    }
-    @AfterClass
-    public void afterClass(){
-        System.out.println("After class");
-    }
-
-
     WebDriver driver;
     @BeforeMethod
     public void setUpEachMethod(){
@@ -35,6 +25,16 @@ public class LoginTests2 {
         driver.quit();
     }
 
+    @Test
+    public void testLogin4(){
+
+        driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("");
+        driver.findElement(By.name("ctl00$MainContent$password")).sendKeys("");
+        driver.findElement(By.className("button")).click();
+        Assert.assertNotEquals(driver.getTitle(), "Web Orders");
+
+
+    }
 
     @Test
     public void testLogin(){
@@ -69,14 +69,5 @@ public class LoginTests2 {
 
     }
 
-    @Test
-    public void testLogin4(){
 
-        driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("");
-        driver.findElement(By.name("ctl00$MainContent$password")).sendKeys("");
-        driver.findElement(By.className("button")).click();
-        Assert.assertNotEquals(driver.getTitle(), "Web Orders");
-
-
-    }
 }
