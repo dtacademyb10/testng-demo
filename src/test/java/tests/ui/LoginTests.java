@@ -11,7 +11,7 @@ import java.time.Duration;
 public class LoginTests {
 
 
-    @Test
+    @Test (groups = {"smoke"})
     public void test_0001_ui_Login(){
 
         WebDriver driver = new ChromeDriver();
@@ -43,7 +43,7 @@ public class LoginTests {
 
     }
 
-    @Test
+    @Test (groups = {"smoke"})
     public void test_0003_ui_Login3(){
 
         WebDriver driver = new ChromeDriver();

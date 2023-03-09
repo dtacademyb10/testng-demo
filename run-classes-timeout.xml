@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Web Orders Tests" time-out="10000" >
+<!--    apply global timeout of 10000 ms to every test included in this xml file-->
+
+    <test name="UI Tests">
+
+
+        <classes>
+
+            <class name="tests.ui.TimeoutTest"/>
+
+
+        </classes>
+
+    </test>
+
+</suite>

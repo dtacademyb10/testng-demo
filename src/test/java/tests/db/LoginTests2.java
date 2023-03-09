@@ -10,22 +10,10 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class LoginTests2 {
+public class LoginTests2  extends TestBase{
 
 
-    WebDriver driver;
-    @BeforeMethod
-    public void setUpEachMethod(){
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
-    }
 
-    @AfterMethod
-    public void tearDownMethod(){
-        driver.quit();
-    }
 
     @Test
     public void testLogin4(){

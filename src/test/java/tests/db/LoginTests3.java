@@ -1,20 +1,20 @@
-package tests.ui;
+package tests.db;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
-import tests.db.TestBase;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class LoginTests2 extends TestBase {
+public class LoginTests3 extends  TestBase{
 
 
 
-
-    @Test (groups = {"flaky"})
+    @Test
     public void testLogin4(){
 
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("");
@@ -36,7 +36,7 @@ public class LoginTests2 extends TestBase {
 
     }
 
-    @Test (groups = {"smoke"})
+    @Test
     public void testLogin2(){
 
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");

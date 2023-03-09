@@ -50,7 +50,8 @@ public class AnnotationExecutionOrder {
     public void tearDownTest(){
         System.out.println("After Test");
     }
-   @Test
+
+    @Test (groups = {"smoke"})
     public void methdod1(){
         System.out.println("Test 1");
     }
