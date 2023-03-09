@@ -4,12 +4,14 @@
 <!--    suite represents a group of test cases e.g regression test suite-->
 
     <test name="UI Tests">
-<!--  test represents a collection of test cases under a suite e.g UI tests under regression suite-->
+
 
         <classes>
 <!--    class names should include package names if there are any-->
-            <class name="tests.LoginTests"/>
-            <class name="tests.LoginTests2"/>
+            <class name="tests.api.AnnotationExecutionOrder"/>
+            <class name="tests.db.LoginTests"/>
+            <class name="tests.ui.LoginTests2"/>
+
 
         </classes>
 

@@ -8,18 +8,8 @@
 
         <classes>
 <!--    class names should include package names if there are any-->
-            <class name="tests.ui.LoginTests">
-                <methods>
-<!--                    individual method with @Test annotation in a class-->
-                    <include name="testLogin"/>
-                </methods>
-            </class>
-
-            <class name="tests.ui.LoginTests2">
-                <methods>
-                    <include name="testLogin4"/>
-                </methods>
-            </class>
+            <class name="tests.ui.LoginTests"/>
+            <class name="tests.ui.LoginTests2"/>
 
         </classes>
 

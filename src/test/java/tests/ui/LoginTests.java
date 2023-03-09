@@ -1,4 +1,4 @@
-package tests;
+package tests.ui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ public class LoginTests {
 
 
     @Test
-    public void testLogin(){
+    public void test_0001_ui_Login(){
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -28,7 +28,7 @@ public class LoginTests {
     }
 
     @Test
-    public void testLogin2(){
+    public void test_0002_ui_Login2(){
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -44,7 +44,7 @@ public class LoginTests {
     }
 
     @Test
-    public void testLogin3(){
+    public void test_0003_ui_Login3(){
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -60,7 +60,7 @@ public class LoginTests {
     }
 
     @Test
-    public void testLogin4(){
+    public void test_0004_ui_Login4(){
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
